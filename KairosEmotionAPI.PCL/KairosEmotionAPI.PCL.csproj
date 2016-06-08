@@ -2,7 +2,7 @@
 <!--
  - KairosEmotionAPI.PCL
  -
- - This file was automatically generated for kairos by APIMATIC BETA v2.0 on 01/15/2016
+ - This file was automatically generated for kairos by APIMATIC v2.0 ( https://apimatic.io ) on 06/08/2016
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
@@ -10,7 +10,7 @@
     <AssemblyName>KairosEmotionAPI.PCL</AssemblyName>
     <OutputType>Library</OutputType>
     <OutputPath>bin/DEBUG/</OutputPath>
-    <ProjectGuid>{67f8c5df-2cba-40c0-b629-59f83ebbe03b}</ProjectGuid>
+    <ProjectGuid>{34683bff-5e09-4d35-8643-6509bb35bdb8}</ProjectGuid>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
     <NuGetPackageImportStamp>ee2bb91c</NuGetPackageImportStamp>
@@ -20,7 +20,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>  
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile92</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile328</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -41,14 +41,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-	<Reference Include="Microsoft.Threading.Tasks">
+    <Reference Include="Microsoft.Threading.Tasks">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net40+sl4+win8+wp71+wpa81\Microsoft.Threading.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Threading.Tasks.Extensions">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net40+sl4+win8+wp71+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.IO">
       <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\portable-net40+win8+wp8+wpa81\System.IO.dll</HintPath>
@@ -69,29 +69,33 @@
       <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\portable-net40+win8+wp8+wpa81\System.Threading.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="unirest-net">
-      <HintPath>..\packages\Unirest-APIMATIC.1.0.0.2\lib\unirest-net.dll</HintPath>
+      <HintPath>..\packages\Unirest-APIMATIC.1.0.1.22\lib\portable-net40+sl5+wp80+win8+wpa81\unirest-net.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Models\MediaResponse.cs" />
-     <Compile Include="Models\MediaByIdResponse.cs" />
-     <Compile Include="Controllers\EmotionAnalysisController.cs" />
-     <Compile Include="Http\Client\IHTTPClient.cs" />
-     <Compile Include="Http\Client\UnirestClient.cs" />
-     <Compile Include="Http\Client\HttpContext.cs" />
-     <Compile Include="Http\Request\HttpRequest.cs" />
-     <Compile Include="Http\Request\HttpMethod.cs" />
-     <Compile Include="Http\Response\HttpResponse.cs" />
-     <Compile Include="Http\Response\HttpStringResponse.cs" />
-     <Compile Include="Http\Client\FileStreamInfo.cs" />
-     <Compile Include="Controllers\BaseController.cs" />
-     <Compile Include="Configuration.cs" />
+    <Compile Include="Models\MediaResponse.cs" />
+    <Compile Include="Models\MediaByIdResponse.cs" />
+    <Compile Include="Controllers\EmotionAnalysisController.cs" />
+    <Compile Include="Http\Client\IHTTPClient.cs" />
+    <Compile Include="Http\Client\UnirestClient.cs" />
+    <Compile Include="Http\Client\HttpEventHandlers.cs" />
+    <Compile Include="Http\Client\HttpContext.cs" />
+    <Compile Include="Http\Request\HttpRequest.cs" />
+    <Compile Include="Http\Request\HttpMethod.cs" />
+    <Compile Include="Http\Response\HttpResponse.cs" />
+    <Compile Include="Http\Response\HttpStringResponse.cs" />
+    <Compile Include="Http\Client\FileStreamInfo.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Configuration.cs" />
     <Compile Include="APIHelper.cs" />
-	<Compile Include="APIException.cs" />
+    <Compile Include="APIException.cs" />
     <Compile Include="AuthUtility.cs" />
     <Compile Include="KairosEmotionAPIClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
+    <None Include="KairosEmotionAPI.PCL.nuspec">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="$(SolutionDir)\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('$(SolutionDir)\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

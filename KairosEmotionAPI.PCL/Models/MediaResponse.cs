@@ -1,7 +1,7 @@
 /*
  * KairosEmotionAPI.PCL
  *
- * This file was automatically generated for kairos by APIMATIC BETA v2.0 on 01/15/2016
+ * This file was automatically generated for kairos by APIMATIC v2.0 ( https://apimatic.io ) on 06/08/2016
  */
 using System;
 using System.IO;
@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+
 using KairosEmotionAPI.PCL;
 
 namespace KairosEmotionAPI.PCL.Models
@@ -19,26 +20,9 @@ namespace KairosEmotionAPI.PCL.Models
     public class MediaResponse : INotifyPropertyChanged 
     {
         // These fields hold the values for the public properties.
-        private int statusCode;
         private string id;
+        private int statusCode;
         private string statusMessage;
-
-        /// <summary>
-        /// TODO: Write general description for this method
-        /// </summary>
-        [JsonProperty("status_code")]
-        public int StatusCode 
-        { 
-            get 
-            {
-                return this.statusCode; 
-            } 
-            set 
-            {
-                this.statusCode = value;
-                onPropertyChanged("StatusCode");
-            }
-        }
 
         /// <summary>
         /// TODO: Write general description for this method
@@ -54,6 +38,23 @@ namespace KairosEmotionAPI.PCL.Models
             {
                 this.id = value;
                 onPropertyChanged("Id");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("status_code")]
+        public int StatusCode 
+        { 
+            get 
+            {
+                return this.statusCode; 
+            } 
+            set 
+            {
+                this.statusCode = value;
+                onPropertyChanged("StatusCode");
             }
         }
 

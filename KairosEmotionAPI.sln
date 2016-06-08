@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KairosEmotionAPI.PCL", "KairosEmotionAPI.PCL/KairosEmotionAPI.PCL.csproj", "{67f8c5df-2cba-40c0-b629-59f83ebbe03b}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KairosEmotionAPI.PCL", "KairosEmotionAPI.PCL/KairosEmotionAPI.PCL.csproj", "{34683bff-5e09-4d35-8643-6509bb35bdb8}"
 EndProject
 Global
     GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
         Release|Any CPU = Release|Any CPU
     EndGlobalSection
     GlobalSection(ProjectConfigurationPlatforms) = postSolution
-        {67f8c5df-2cba-40c0-b629-59f83ebbe03b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-        {67f8c5df-2cba-40c0-b629-59f83ebbe03b}.Debug|Any CPU.Build.0 = Debug|Any CPU
-        {67f8c5df-2cba-40c0-b629-59f83ebbe03b}.Release|Any CPU.ActiveCfg = Release|Any CPU
-        {67f8c5df-2cba-40c0-b629-59f83ebbe03b}.Release|Any CPU.Build.0 = Release|Any CPU
+        {34683bff-5e09-4d35-8643-6509bb35bdb8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {34683bff-5e09-4d35-8643-6509bb35bdb8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {34683bff-5e09-4d35-8643-6509bb35bdb8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {34683bff-5e09-4d35-8643-6509bb35bdb8}.Release|Any CPU.Build.0 = Release|Any CPU
     EndGlobalSection
     GlobalSection(SolutionProperties) = preSolution
         HideSolutionNode = FALSE

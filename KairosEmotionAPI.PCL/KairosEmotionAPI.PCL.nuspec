@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+KairosEmotionAPI.PCL
+This file was automatically generated for kairos by APIMATIC v2.0 ( https://apimatic.io ) on 06/08/2016
+-->
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>KairosEmotionAPI.PCL</id>
+    <version>1.0</version>
+    <title>KairosEmotionAPI.PCL</title>
+    <authors>APIMATIC 2.0</authors>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>## Overview
+We're building a platform that lets you quickly add Emotion Analysis - https://www.kairos.com/emotion-analysis-api into your apps and services.
+We’ve made it simple to connect with Kairos via our REST-style APIs. Client libraries for your favorite languages are coming soon. 
+
+## Help and Support
+We'd love to hear feedback from you and we're also here to help if you have any challenges.
+We have lots of answers to popular queries in our knowledge base - https://www.kairos.com/support or you can ask us a question - https://www.kairos.com/contact.
+</description>
+    <summary />
+    <releaseNotes />
+    <copyright>Copyright 2016</copyright>
+    <language>en-US</language>
+        <dependencies>
+            <dependency id="Unirest-APIMATIC" version="1.0.1.22" />
+        </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\KairosEmotionAPI.PCL.dll" target="lib\KairosEmotionAPI.PCL.dll" />
+  </files>
+</package>
